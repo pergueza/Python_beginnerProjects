@@ -9,14 +9,17 @@ Multiple simple projects with Python
 
     ### What things do we use?
     receive user input, work with strings (f-strings), and see our
-    results printed to the console.
+    results printed in the console.
 
 - ## Guess the number
 
     ### What it's guess the number?
-    It consists of guessing a number that the system generates
-    automatically. The user must enter a number between 1 and
-    another number that he want.
+    We have two game modes, the user can choose what he want, then the user needs to input one number, this number is the maximum number that it can take.
+    
+    The first mode (GuessUser) consists of the user guessing a number that the system automatically generates between 1 and the maximum number.
+    
+    The second mode (GuessSystem) consist of the user thinking in one number between 1 and the maximum number and the system try to guessing the number.
 
     ### What things do we use?
-    Inputs, functions, loop while and if statement.
+    We work with: inputs, functions, loop while and if statement.
+    We see our results printed in the console.

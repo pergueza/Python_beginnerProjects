@@ -1,12 +1,15 @@
 import random
 
+maxNumber = int(input("Enter the maximum number that it can take"))
 
-def guess(x):
-    randomNumber = random.randint(1, x)
+
+def guessUser(maxNumber):
+    randomNumber = random.randint(1, maxNumber)
     guess = 0
 
     while guess != randomNumber:
-        guess = int(input("Guess a number between 1 and {}: ".format(x)))
+        guess = int(input(f"Guess a number between 1 and {maxNumber}: "))
+
         if guess < randomNumber:
             print("Sorry, guess again. Too low.")
         elif guess > randomNumber:
@@ -16,4 +19,8 @@ def guess(x):
           "{} correctly".format(randomNumber))
 
 
-guess(int(input("Enter the maximum number to guessed: ")))
+def guessSystem(maxNumber):
+    return 0
+
+
+guessUser(maxNumber)
