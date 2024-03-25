@@ -2,6 +2,9 @@ import random
 
 
 def main():
+    """The main function, this is the initialize of whole program.
+    """
+
     print("Hello dear user, we going to play Guess the number.")
     print("First, we need a integer bigger than 1, this number will be the",
           "maximum number that it can take.")
@@ -9,6 +12,9 @@ def main():
 
 
 def showMenu():
+    """This function print multiple options for the user.
+    """
+
     maxNumber = 0
     showOptions = True
 
@@ -41,7 +47,14 @@ def showMenu():
             print("Invalid option. Please enter a number between 1 and 3")
 
 
-def guessUser(maxNumber):
+def guessUser(maxNumber: int):
+    """With this function the user can play against the computer, the computer
+    choose a random number between 1 and the max number and the user try to
+    guess it.
+
+    Args:
+        maxNumber (int): The maximum number that it can take.
+    """
     randomNumber = random.randint(1, maxNumber)
     guess = int
 
@@ -60,7 +73,14 @@ def guessUser(maxNumber):
           "{} correctly".format(randomNumber))
 
 
-def guessSystem(maxNumber):
+def guessSystem(maxNumber: int):
+    """With this function the computer can play against the user, the user
+    needs to think in one number between 1 and the max number and the computer
+    try to guess his number.
+
+    Args:
+        maxNumber (int): The maximum number that it can take.
+    """
     low = 1
     high = maxNumber
     correctNumber = False

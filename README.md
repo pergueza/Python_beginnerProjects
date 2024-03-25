@@ -30,3 +30,15 @@ Multiple simple projects with Python
     We work with: inputs, functions, loop while, error and
     exceptions, if statement and the library random.
     We see our results printed in the console.
+
+- ## Hangman
+
+    ### What it's Hangman?
+    Hangman is a guessing game. The computer thinks of a word and the
+    player tries to guess it by suggesting letters within a certain
+    number of guesses.
+
+    ### What things do we use?
+    We work with: library pandas, inputs, functions, loop while, if
+    statement and the library random.
+    We see our results printed in the console.
