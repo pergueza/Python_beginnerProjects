@@ -61,7 +61,31 @@ def guessUser(maxNumber):
 
 
 def guessSystem(maxNumber):
-    return 0
+    low = 1
+    high = maxNumber
+    correctNumber = False
+    while (not correctNumber):
+        guessNumber = ((high - low) // 2) + low
+        print(f"\nThe number is {guessNumber}?")
+        print("1. It's correct.")
+        print("2. The number is too high.")
+        print("3. The number is too low.")
+        print("4. Return to the menu.")
+        try:
+            option = int(input("Option: "))
+            if option == 1:
+                print("Oh yeah, good game!!!")
+                correctNumber = True
+            elif option == 2:
+                high = guessNumber
+            elif option == 3:
+                low = guessNumber
+            elif option == 4:
+                break
+            else:
+                print("Please enter a valid option.")
+        except ValueError:
+            print("Please enter a valid option")
 
 
 main()

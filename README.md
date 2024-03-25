@@ -21,5 +21,5 @@ Multiple simple projects with Python
     The second mode (GuessSystem) consist of the user thinking in one number between 1 and the maximum number and the system try to guessing the number.
 
     ### What things do we use?
-    We work with: inputs, functions, loop while and if statement.
+    We work with: inputs, functions, loop while, error and exceptions, if statement and the library random.
     We see our results printed in the console.
