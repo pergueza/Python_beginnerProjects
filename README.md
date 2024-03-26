@@ -38,7 +38,12 @@ Multiple simple projects with Python
     player tries to guess it by suggesting letters within a certain
     number of guesses.
 
+    The player can choose between a spanish word or a english word.
+
     ### What things do we use?
-    We work with: library pandas, inputs, functions, loop while, if
-    statement and the library random.
+    We work with: inputs, functions, loop while, if statement, error
+    and exceptions and documentations.
+
+    Librarys that we use: Pandas, random, string and unicodedata.
+    
     We see our results printed in the console.
